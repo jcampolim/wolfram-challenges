@@ -1,5 +1,4 @@
-GetDistance[a_String, b_String] /; 
-  StringLength[a] == 1 && StringLength[b] == 1 :=
+GetDistance[a_String, b_String] /; StringLength[a] == 1 && StringLength[b] == 1 :=
  Module[{codeA, codeB},
   codeA = First@ToCharacterCode[a];
   codeB = First@ToCharacterCode[b];
